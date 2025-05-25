@@ -1,0 +1,165 @@
+Starting client 0 HTTP server on http://localhost:20001 to listen for replies.
+Will send 20 messages.
+Starting client request coroutine.
+Preparing to send message 0 (client_seq 0).
+Starting client 0 HTTP server on http://localhost:20001 to listen for replies.
+Will send 20 messages.
+Starting client request coroutine.
+Preparing to send message 0 (client_seq 0).
+Starting client 0 HTTP server on http://localhost:20001 to listen for replies.
+Will send 20 messages.
+Starting client request coroutine.
+Preparing to send message 0 (client_seq 0).
+Error handling request from ::1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/blockchain_client.py", line 156, in get_reply
+    if self._is_request_succeed and not self._is_request_succeed.done() and self._status._check_succeed():
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Event' object has no attribute 'done'
+Error handling request from ::1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/blockchain_client.py", line 156, in get_reply
+    if self._is_request_succeed and not self._is_request_succeed.done() and self._status._check_succeed():
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Event' object has no attribute 'done'
+Error handling request from ::1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/blockchain_client.py", line 156, in get_reply
+    if self._is_request_succeed and not self._is_request_succeed.done() and self._status._check_succeed():
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Event' object has no attribute 'done'
+Error handling request from ::1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/blockchain_client.py", line 156, in get_reply
+    if self._is_request_succeed and not self._is_request_succeed.done() and self._status._check_succeed():
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Event' object has no attribute 'done'
+Starting client 0 HTTP server on http://localhost:20001 to listen for replies.
+Will send 20 messages.
+Starting client request coroutine.
+Preparing to send message 0 (client_seq 0).
+Error handling request from ::1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/blockchain_client.py", line 156, in get_reply
+    self._log.info(f"Sufficient replies ({self.f + 1}) received for current request. Setting success event.")
+                                          ^^^^^^
+AttributeError: 'Client' object has no attribute 'f'. Did you mean: '_f'?
+Error handling request from ::1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/blockchain_client.py", line 156, in get_reply
+    self._log.info(f"Sufficient replies ({self.f + 1}) received for current request. Setting success event.")
+                                          ^^^^^^
+AttributeError: 'Client' object has no attribute 'f'. Did you mean: '_f'?
+Error handling request from ::1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/blockchain_client.py", line 156, in get_reply
+    self._log.info(f"Sufficient replies ({self.f + 1}) received for current request. Setting success event.")
+                                          ^^^^^^
+AttributeError: 'Client' object has no attribute 'f'. Did you mean: '_f'?
+Starting client 0 HTTP server on http://localhost:20001 to listen for replies.
+Will send 20 messages.
+Starting client request coroutine.
+Preparing to send message 0 (client_seq 0).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:0) confirmed successfully.
+Preparing to send message 1 (client_seq 1).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:1) confirmed successfully.
+Preparing to send message 2 (client_seq 2).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:2) confirmed successfully.
+Preparing to send message 3 (client_seq 3).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:3) confirmed successfully.
+Preparing to send message 4 (client_seq 4).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:4) confirmed successfully.
+Preparing to send message 5 (client_seq 5).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:5) confirmed successfully.
+Preparing to send message 6 (client_seq 6).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:6) confirmed successfully.
+Preparing to send message 7 (client_seq 7).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:7) confirmed successfully.
+Preparing to send message 8 (client_seq 8).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:8) confirmed successfully.
+Preparing to send message 9 (client_seq 9).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:9) confirmed successfully.
+Preparing to send message 10 (client_seq 10).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:10) confirmed successfully.
+Preparing to send message 11 (client_seq 11).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:11) confirmed successfully.
+Preparing to send message 12 (client_seq 12).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:12) confirmed successfully.
+Preparing to send message 13 (client_seq 13).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:13) confirmed successfully.
+Preparing to send message 14 (client_seq 14).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:14) confirmed successfully.
+Preparing to send message 15 (client_seq 15).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:15) confirmed successfully.
+Preparing to send message 16 (client_seq 16).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:16) confirmed successfully.
+Preparing to send message 17 (client_seq 17).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:17) confirmed successfully.
+Preparing to send message 18 (client_seq 18).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:18) confirmed successfully.
+Preparing to send message 19 (client_seq 19).
+Sufficient replies (2) received for current request. Setting success event.
+---> Client 0's message (seq:19) confirmed successfully.
+Client 0 finished sending all 20 messages.
+Client session closed.

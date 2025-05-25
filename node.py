@@ -467,7 +467,7 @@ class Blockchain:
         the chain. The block has index 0, previous_hash as 0, and
         a valid hash.
         """
-        genesis_block = Block(0, ["Genenesis Block"], time.time(), "0") # Added time.time() for timestamp
+        genesis_block = Block(0, ["Genenesis Block"], 0, "0") # Added time.time() for timestamp
         genesis_block.hash = genesis_block.compute_hash()
         self.length += 1
         self.chain.append(genesis_block)

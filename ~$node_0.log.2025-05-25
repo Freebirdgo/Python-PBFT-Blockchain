@@ -1,0 +1,1183 @@
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 0
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 1
+Error handling request from ::1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/./node.py", line 704, in commit
+    sender_index = json_data['index']
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'index'
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/./node.py", line 704, in commit
+    sender_index = json_data['index']
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'index'
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 0
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 1
+Error handling request from ::1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/./node.py", line 704, in commit
+    sender_index = json_data['index']
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'index'
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/.venv/lib/python3.13/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nodark/Programming/research/Python-PBFT-Blockchain/./node.py", line 704, in commit
+    sender_index = json_data['index']
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'index'
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 0
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 1
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 0, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 0, view 0
+Sending COMMIT for slot 0, view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 0 for view 0
+Commit certificate formed for slot 0, view 0
+Locally committing slot 0
+Received PREPARE message from node 0 for view 0
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 1, view 0
+Received PREPARE message from node 3 for view 0
+Received PREPARE message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 1, view 0
+Sending COMMIT for slot 1, view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 1, view 0
+Locally committing slot 1
+Received COMMIT message from node 2 for view 0
+Received PREPARE message from node 0 for view 0
+Replied to client for slot 1 successfully!
+Replied to client for slot 0 successfully!
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 0
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 1
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 0, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 0, view 0
+Sending COMMIT for slot 0, view 0
+Received PREPARE message from node 1 for view 0
+Received COMMIT message from node 2 for view 0
+Received PREPARE message from node 0 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 0, view 0
+Locally committing slot 0
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 1, view 0
+Received PREPARE message from node 2 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 1, view 0
+Sending COMMIT for slot 1, view 0
+Received PREPARE message from node 0 for view 0
+Received COMMIT message from node 0 for view 0
+Commit certificate formed for slot 1, view 0
+Locally committing slot 1
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 0 successfully!
+Replied to client for slot 1 successfully!
+---> Create checkpoint.
+Starting node 0 on http://localhost:30000
+Starting background tasks (synchronize, garbage_collection)...
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 0
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 1
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 0, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 0, view 0
+Sending COMMIT for slot 0, view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Commit certificate formed for slot 0, view 0
+Locally committing slot 0
+Received PREPARE message from node 0 for view 0
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 1, view 0
+Received COMMIT message from node 3 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 1, view 0
+Sending COMMIT for slot 1, view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 1, view 0
+Locally committing slot 1
+Received COMMIT message from node 0 for view 0
+Received PREPARE message from node 0 for view 0
+Replied to client for slot 0 successfully!
+Replied to client for slot 1 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 2
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 2, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 0 for view 0
+Prepare certificate formed for slot 2, view 0
+Sending COMMIT for slot 2, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 2, view 0
+Locally committing slot 2
+Received COMMIT message from node 0 for view 0
+Replied to client for slot 2 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 3
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 3, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 3, view 0
+Sending COMMIT for slot 3, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 3, view 0
+Locally committing slot 3
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 3 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 4
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 4, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 4, view 0
+Sending COMMIT for slot 4, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 4, view 0
+Locally committing slot 4
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 4 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 5
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 5, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 5, view 0
+Sending COMMIT for slot 5, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 5, view 0
+Locally committing slot 5
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 5 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 6
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 6, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 6, view 0
+Sending COMMIT for slot 6, view 0
+Received PREPARE message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 6, view 0
+Locally committing slot 6
+Received COMMIT message from node 1 for view 0
+Replied to client for slot 6 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 7
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 7, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 7, view 0
+Sending COMMIT for slot 7, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 7, view 0
+Locally committing slot 7
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 7 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 8
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 8, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 8, view 0
+Sending COMMIT for slot 8, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 8, view 0
+Locally committing slot 8
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 8 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 9
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 9, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 9, view 0
+Sending COMMIT for slot 9, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 9, view 0
+Locally committing slot 9
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 9 successfully!
+Checkpoint interval reached at slot 9.
+Received checkpoint vote.
+Received checkpoint vote.
+Received checkpoint vote.
+Update checkpoint by receiving votes. New next_slot: 10
+Received checkpoint vote.
+Adding new block to blockchain with 10 transactions.
+Added Block 1 with hash e94e8639...
+Written blocks up to index 1 to file.
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 10
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 10, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 10, view 0
+Sending COMMIT for slot 10, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 10, view 0
+Locally committing slot 10
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 10 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 11
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 11, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 11, view 0
+Sending COMMIT for slot 11, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 11, view 0
+Locally committing slot 11
+Received COMMIT message from node 1 for view 0
+Replied to client for slot 11 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 12
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 12, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 12, view 0
+Sending COMMIT for slot 12, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Commit certificate formed for slot 12, view 0
+Locally committing slot 12
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 12 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 13
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 13, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 0 for view 0
+Prepare certificate formed for slot 13, view 0
+Sending COMMIT for slot 13, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 13, view 0
+Locally committing slot 13
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 13 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 14
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 14, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 14, view 0
+Sending COMMIT for slot 14, view 0
+Received PREPARE message from node 2 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 14, view 0
+Locally committing slot 14
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 14 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 15
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 15, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 15, view 0
+Sending COMMIT for slot 15, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 15, view 0
+Locally committing slot 15
+Received COMMIT message from node 0 for view 0
+Replied to client for slot 15 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 16
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 16, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 16, view 0
+Sending COMMIT for slot 16, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 16, view 0
+Locally committing slot 16
+Received COMMIT message from node 1 for view 0
+Replied to client for slot 16 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 17
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 17, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 17, view 0
+Sending COMMIT for slot 17, view 0
+Received PREPARE message from node 2 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Commit certificate formed for slot 17, view 0
+Locally committing slot 17
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 17 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 18
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 18, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 18, view 0
+Sending COMMIT for slot 18, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 18, view 0
+Locally committing slot 18
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 18 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 19
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 19, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 19, view 0
+Sending COMMIT for slot 19, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 19, view 0
+Locally committing slot 19
+Received COMMIT message from node 3 for view 0
+Received checkpoint vote.
+Replied to client for slot 19 successfully!
+Checkpoint interval reached at slot 19.
+Received checkpoint vote.
+Received checkpoint vote.
+Update checkpoint by receiving votes. New next_slot: 20
+Received checkpoint vote.
+Adding new block to blockchain with 10 transactions.
+Added Block 2 with hash 6d3d2e77...
+Written blocks up to index 2 to file.
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 20
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 20, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 20, view 0
+Sending COMMIT for slot 20, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 20, view 0
+Locally committing slot 20
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 20 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 21
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 21, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 21, view 0
+Sending COMMIT for slot 21, view 0
+Received PREPARE message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 21, view 0
+Locally committing slot 21
+Received COMMIT message from node 0 for view 0
+Replied to client for slot 21 successfully!
+Garbage collected status for 20 slots: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19']
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 22
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 22, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 22, view 0
+Sending COMMIT for slot 22, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 22, view 0
+Locally committing slot 22
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 22 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 23
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 23, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 1 for view 0
+Prepare certificate formed for slot 23, view 0
+Sending COMMIT for slot 23, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 23, view 0
+Locally committing slot 23
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 23 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 24
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 24, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 24, view 0
+Sending COMMIT for slot 24, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 24, view 0
+Locally committing slot 24
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 24 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 25
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 25, view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 0 for view 0
+Prepare certificate formed for slot 25, view 0
+Sending COMMIT for slot 25, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 0 for view 0
+Commit certificate formed for slot 25, view 0
+Locally committing slot 25
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 25 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 26
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 26, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 26, view 0
+Sending COMMIT for slot 26, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 26, view 0
+Locally committing slot 26
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 26 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 27
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 27, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 27, view 0
+Sending COMMIT for slot 27, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 27, view 0
+Locally committing slot 27
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 27 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 28
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 28, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 0 for view 0
+Prepare certificate formed for slot 28, view 0
+Sending COMMIT for slot 28, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 28, view 0
+Locally committing slot 28
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 28 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 29
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 29, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 3 for view 0
+Prepare certificate formed for slot 29, view 0
+Sending COMMIT for slot 29, view 0
+Received PREPARE message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 29, view 0
+Locally committing slot 29
+Received COMMIT message from node 0 for view 0
+Replied to client for slot 29 successfully!
+Checkpoint interval reached at slot 29.
+Received checkpoint vote.
+Received checkpoint vote.
+Received checkpoint vote.
+Update checkpoint by receiving votes. New next_slot: 30
+Received checkpoint vote.
+Adding new block to blockchain with 10 transactions.
+Added Block 3 with hash 22473730...
+Written blocks up to index 3 to file.
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 30
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 30, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 0 for view 0
+Prepare certificate formed for slot 30, view 0
+Sending COMMIT for slot 30, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 30, view 0
+Locally committing slot 30
+Received COMMIT message from node 0 for view 0
+Replied to client for slot 30 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 31
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 31, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 2 for view 0
+Received PREPARE message from node 1 for view 0
+Prepare certificate formed for slot 31, view 0
+Sending COMMIT for slot 31, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 31, view 0
+Locally committing slot 31
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 31 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 32
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 32, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 32, view 0
+Sending COMMIT for slot 32, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 32, view 0
+Locally committing slot 32
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 32 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 33
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 33, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 33, view 0
+Sending COMMIT for slot 33, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 33, view 0
+Locally committing slot 33
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 33 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 34
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 34, view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 34, view 0
+Sending COMMIT for slot 34, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 2 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 34, view 0
+Locally committing slot 34
+Received COMMIT message from node 3 for view 0
+Replied to client for slot 34 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 35
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 35, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 35, view 0
+Sending COMMIT for slot 35, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 35, view 0
+Locally committing slot 35
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 35 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 36
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 36, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 36, view 0
+Sending COMMIT for slot 36, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 36, view 0
+Locally committing slot 36
+Received COMMIT message from node 1 for view 0
+Replied to client for slot 36 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 37
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 37, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 37, view 0
+Sending COMMIT for slot 37, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 2 for view 0
+Commit certificate formed for slot 37, view 0
+Locally committing slot 37
+Received COMMIT message from node 1 for view 0
+Replied to client for slot 37 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 38
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 38, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 38, view 0
+Sending COMMIT for slot 38, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 1 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 3 for view 0
+Commit certificate formed for slot 38, view 0
+Locally committing slot 38
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 38 successfully!
+Received client request. Am I leader? True (View: 0, Leader for view: 0)
+On preprepare, proposing for slot: 39
+Received preprepare message from leader 0 for view 0
+Sending PREPARE for slot 39, view 0
+Received PREPARE message from node 0 for view 0
+Received PREPARE message from node 1 for view 0
+Received PREPARE message from node 2 for view 0
+Prepare certificate formed for slot 39, view 0
+Sending COMMIT for slot 39, view 0
+Received PREPARE message from node 3 for view 0
+Received COMMIT message from node 3 for view 0
+Received COMMIT message from node 0 for view 0
+Received COMMIT message from node 1 for view 0
+Commit certificate formed for slot 39, view 0
+Locally committing slot 39
+Received COMMIT message from node 2 for view 0
+Replied to client for slot 39 successfully!
+Checkpoint interval reached at slot 39.
+Received checkpoint vote.
+Received checkpoint vote.
+Received checkpoint vote.
+Update checkpoint by receiving votes. New next_slot: 40
+Received checkpoint vote.
+Adding new block to blockchain with 10 transactions.
+Added Block 4 with hash f2914fad...
+Written blocks up to index 4 to file.
+Garbage collected status for 20 slots: ['20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39']
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
+During block formation, slot 30 was expected but not fully committed.
+During block formation, slot 31 was expected but not fully committed.
+During block formation, slot 32 was expected but not fully committed.
+During block formation, slot 33 was expected but not fully committed.
+During block formation, slot 34 was expected but not fully committed.
+During block formation, slot 35 was expected but not fully committed.
+During block formation, slot 36 was expected but not fully committed.
+During block formation, slot 37 was expected but not fully committed.
+During block formation, slot 38 was expected but not fully committed.
+During block formation, slot 39 was expected but not fully committed.
+No committed decisions for the current interval to add to blockchain.
