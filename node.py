@@ -626,7 +626,7 @@ class PBFTHandler:
             'type': 'preprepare' # Message type for routing/handling
         }
 
-        await self._post(self._nodes, PBFTHandler.PREPARE, preprepare_msg) # Send to /prepare endpoint of other nodes
+        await self._post(self._nodes, PBFTHandler.PREPREPARE, preprepare_msg) # Send to /prepare endpoint of other nodes
 
     async def get_request(self, request: web.Request): # Type hint for clarity
         # Handles initial client request
@@ -696,7 +696,7 @@ class PBFTHandler:
                 'type': Status.PREPARE # This is a PREPARE type message
             }
             self._log.info("Sending PREPARE for slot %s, view %d", slot_str, sender_view)
-            await self._post(self._nodes, PBFTHandler.COMMIT, prepare_msg) # Send to /commit endpoint
+            await self._post(self._nodes, PBFTHandler.PREPARE, prepare_msg) # Send to /commit endpoint
         return web.Response()
 
     async def commit(self, request: web.Request): # Handles PREPARE messages
@@ -742,7 +742,7 @@ class PBFTHandler:
                     'type': Status.COMMIT # This is a COMMIT type message
                 }
                 self._log.info("Sending COMMIT for slot %s, view %d", slot_str, sender_view)
-                await self._post(self._nodes, PBFTHandler.REPLY, commit_msg) # Send to /reply endpoint
+                await self._post(self._nodes, PBFTHandler.COMMIT, commit_msg) # Send to /reply endpoint
         return web.Response()
 
     async def reply(self, request: web.Request): # Handles COMMIT messages

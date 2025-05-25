@@ -38,7 +38,7 @@ class Status:
             self.from_nodes = set([])
 
     def _update_sequence(self, view, proposal, from_node):
-        hash_object = hashlib.md5(json.dumps(proposal, sort_keys=True).encode()) # Consider changing to sha256 for consistency
+        hash_object = hashlib.sha256(json.dumps(proposal, sort_keys=True).encode())        
         key = (view.get(), hash_object.digest())
         if key not in self.reply_msgs:
             self.reply_msgs[key] = self.SequenceElement(proposal)
@@ -151,11 +151,9 @@ class Client:
 
         view = View(json_data['view'], len(self._nodes)) # Assuming View class is defined
         self._status._update_sequence(view, json_data['proposal'], json_data['index'])
-        self._log.debug(f"Received reply from node {json_data['index']} for proposal ts {proposal_ts}. From nodes: {self._status.reply_msgs.get((view.get(), hashlib.md5(json.dumps(json_data['proposal'], sort_keys=True).encode()).digest()), type(None) if not hasattr(self._status, 'reply_msgs') else 'N/A').from_nodes if hasattr(self._status.reply_msgs.get((view.get(), hashlib.md5(json.dumps(json_data['proposal'], sort_keys=True).encode()).digest())), 'from_nodes') else 'KeyNotPresent'}")
-
-
-        if self._is_request_succeed and not self._is_request_succeed.done() and self._status._check_succeed():
-            self._log.info(f"Sufficient replies ({self.f + 1}) received for current request. Setting success event.")
+        self._log.debug(f"Received reply from node {json_data['index']} ... hashlib.sha256(...).digest()), ...")
+        if self._is_request_succeed and not self._is_request_succeed.is_set() and self._status._check_succeed():
+            self._log.info(f"Sufficient replies ({self._f + 1}) received for current request. Setting success event.")
             self._is_request_succeed.set()
 
         return web.Response(text="Reply processed")
