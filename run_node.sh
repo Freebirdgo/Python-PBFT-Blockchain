@@ -2,7 +2,7 @@
 rm *.blockchain
 for i in {0..3}
 do
-	python ./node.py -i $i -lf True &
+	python3 ./node.py -i $i -lf True &
 done
 
 
