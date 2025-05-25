@@ -7,16 +7,48 @@ nodes:
     port: 30002
   - host: localhost
     port: 30003
-  # - host: localhost
-  #   port: 30004
-  # - host: localhost
-  #   port: 30005
 
 clients:
   - host: localhost
     port: 20001
   - host: localhost
     port: 20002
+  - host: localhost
+    port: 20003
+  - host: localhost
+    port: 20004
+  - host: localhost
+    port: 20005
+  - host: localhost
+    port: 20006
+  - host: localhost
+    port: 20007
+  - host: localhost
+    port: 20008
+  - host: localhost
+    port: 20009
+  - host: localhost
+    port: 20010
+  - host: localhost
+    port: 20011
+  - host: localhost
+    port: 20012
+  - host: localhost
+    port: 20013
+  - host: localhost
+    port: 20014
+  - host: localhost
+    port: 20015
+  - host: localhost
+    port: 20016
+  - host: localhost
+    port: 20017
+  - host: localhost
+    port: 20018
+  - host: localhost
+    port: 20019
+  - host: localhost
+    port: 20020
 
 loss%: 0
 
