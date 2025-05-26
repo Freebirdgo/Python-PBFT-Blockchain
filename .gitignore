@@ -1,3 +1,4 @@
 **.blockchain
 **.log
-**.pyc*.log*
+**.pyc
+**.log.*
