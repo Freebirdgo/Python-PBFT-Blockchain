@@ -910,6 +910,37 @@ class PBFTHandler:
                          self._log.warning(f"Invalid timestamp in proposal for block: {ts_from_proposal}. Using current time.")
                 except Exception as e:
                     self._log.error(f"Error processing timestamp from proposal: {e}. Using current time.")
+        # --- BEGIN MODIFICATION TO HALT BLOCK PRODUCTION ---
+            if self._blockchain.length > 0: # Ensure there is at least one block (genesis)
+                last_committed_block = self._blockchain.last_block
+
+                # Condition 1: Current interval would produce a block identical to the last one.
+                if len(current_interval_decisions) > 0 and \
+                last_committed_block.transactions == current_interval_decisions and \
+                hasattr(last_committed_block, 'timestamp') and last_committed_block.timestamp == timestamp_val:
+                    self._log.warning(
+                        f"Block {self._blockchain.length} transactions and timestamp would be identical to block {last_committed_block.index}. "
+                        f"Halting further block production as it indicates no new unique activity."
+                    )
+                    # To effectively halt, we should prevent _last_commit_slot from advancing with more repeated data.
+                    # For now, by returning, we stop *this* node from adding the block.
+                    # If all nodes do this, the chain stops.
+                    return
+
+                # Condition 2: Current interval has no transactions, and we are past the initial blocks.
+                # This signifies that new messages have stopped.
+                # (self._blockchain.length > 1 ensures we are not stopping right after genesis if the first block is empty)
+                elif not current_interval_decisions and self._blockchain.length > 1 : # Check for index > 0 if genesis has no tx
+                    self._log.info(
+                        f"No transactions to commit for block {self._blockchain.length}. "
+                        f"Halting block production as no new messages are being processed."
+                    )
+                    return
+            elif not current_interval_decisions and self._blockchain.length == 1 and self._blockchain.chain[0].index == 0:
+                # Special case: blockchain only has genesis, and the first "real" block (index 1) would be empty.
+                self._log.info(f"No transactions to commit for the first block after genesis (block index 1). Halting.")
+                return
+        # --- END OF MODIFICATION ---
 
             new_block = Block(self._blockchain.length,
                               current_interval_decisions,
